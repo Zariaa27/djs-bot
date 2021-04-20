@@ -33,4 +33,21 @@ module.exports = (client) => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index], { type: 'LISTENING' });
     }, 10000);
+ client.on("messageReactionAdd", (reaction, user) => {
+
+  if (user === client.user) return;
+  if (user.id !== "502823349110571008") return;
+
+  if (reaction.message.channel.id === "817477111509024819") {
+
+   if (reaction.emoji.name === "❌") {
+
+    reaction.message.delete();
+
+   }
+
+  }
+
+ });
+
 }
