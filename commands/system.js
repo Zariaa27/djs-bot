@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
     const { version } = require("discord.js");
     const FastSpeedtest = require("fast-speedtest-api");
     let speedtest = new FastSpeedtest({
-        token: "Votre_clef_D'API", // required
+        token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm", // required
         verbose: false, // default: false
         timeout: 10000,
         unit: FastSpeedtest.UNITS.Mbps

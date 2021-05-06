@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
          * There are big differences between a user and a member
          */
         member
-          .kick('BAD PEOPLE (idk man ask the admin..)')
+          .kick(args[1])
           .then(() => {
             // We let the message author know we were able to kick the person
             const sucessful = new Discord.MessageEmbed()
